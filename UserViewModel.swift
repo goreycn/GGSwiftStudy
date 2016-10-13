@@ -17,7 +17,7 @@ class UserViewModel: NSObject {
         return Observable.create{ (observer) -> Disposable in
             
             let users = [
-                User(screenName:"Demo"),
+                User(screenName:"LoginWithRxSwift"),
                 User(screenName:"Demo2")
             ]
             

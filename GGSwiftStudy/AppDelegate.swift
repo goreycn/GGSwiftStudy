@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,8 +20,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = UINavigationController(rootViewController: MenuVC())
         
+        myJust(element: 0).subscribe(onNext: { n in
+            debugPrint(n)
+        })
+        
         return true
     }
-
+    
+    
+    func myJust<E>(element: E) -> Observable<E> {
+        return Observable.create({ (observer) -> Disposable in
+            observer.on(.next(element))
+            observer.on(.completed)
+            return Disposables.create()
+        })
+    }
+    
 }
 

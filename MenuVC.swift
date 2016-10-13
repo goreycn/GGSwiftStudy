@@ -13,7 +13,7 @@ import RxCocoa
 import RxSwift
 import RxDataSources
 
-class MenuVC : UIViewController {
+class MenuVC : UIViewController, UITableViewDelegate {
     
     let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, User>>()
     let viewModel = UserViewModel()
@@ -35,6 +35,7 @@ class MenuVC : UIViewController {
             let cell = tableview.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell()
             cell.tag = indexPath.row
             cell.textLabel?.text = user.screenName
+            cell.accessoryType = .disclosureIndicator
             return cell
         }
         
@@ -45,6 +46,18 @@ class MenuVC : UIViewController {
     lazy var tableView : UITableView = {
         let a = UITableView()
         a.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        a.delegate = self
         return a
     }()
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        switch indexPath.row {
+        case 0:
+            navigationController?.pushViewController(LoginWithRxVC(), animated: true)
+        default:
+            debugPrint("nothing")
+        }
+    }
 }
