@@ -56,6 +56,8 @@ class MenuVC : UIViewController, UITableViewDelegate {
         switch indexPath.row {
         case 0:
             navigationController?.pushViewController(LoginWithRxVC(), animated: true)
+        case 1:
+            navigationController?.pushViewController(RxSwiftStudyVC(), animated: true)
         default:
             debugPrint("nothing")
         }

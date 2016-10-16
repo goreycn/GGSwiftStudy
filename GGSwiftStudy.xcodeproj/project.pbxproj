@@ -16,6 +16,7 @@
 		D1337C661DAE31BD003CBD4E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1337C651DAE31BD003CBD4E /* UserViewModel.swift */; };
 		D1337C681DAF0DBC003CBD4E /* LoginWithRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1337C671DAF0DBC003CBD4E /* LoginWithRxVC.swift */; };
 		D16AAA921DAE2763004981F4 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16AAA911DAE2763004981F4 /* MenuVC.swift */; };
+		D183CC661DB061170010049C /* RxSwiftStudyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D183CC651DB061170010049C /* RxSwiftStudyVC.swift */; };
 		D19517681DAE2C9200D18A5A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19517671DAE2C9200D18A5A /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		D1337C651DAE31BD003CBD4E /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		D1337C671DAF0DBC003CBD4E /* LoginWithRxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWithRxVC.swift; sourceTree = "<group>"; };
 		D16AAA911DAE2763004981F4 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		D183CC651DB061170010049C /* RxSwiftStudyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyVC.swift; sourceTree = "<group>"; };
 		D19517671DAE2C9200D18A5A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E359220AA70C8AD20AA016E7 /* Pods-GGSwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGSwiftStudy/Pods-GGSwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 			children = (
 				D16AAA911DAE2763004981F4 /* MenuVC.swift */,
 				D1337C671DAF0DBC003CBD4E /* LoginWithRxVC.swift */,
+				D183CC651DB061170010049C /* RxSwiftStudyVC.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				D16AAA921DAE2763004981F4 /* MenuVC.swift in Sources */,
 				D1337C681DAF0DBC003CBD4E /* LoginWithRxVC.swift in Sources */,
 				D11EC1D61DADD81300DE258B /* ViewController.swift in Sources */,
+				D183CC661DB061170010049C /* RxSwiftStudyVC.swift in Sources */,
 				D1337C661DAE31BD003CBD4E /* UserViewModel.swift in Sources */,
 				D11EC1D41DADD81300DE258B /* AppDelegate.swift in Sources */,
 			);
