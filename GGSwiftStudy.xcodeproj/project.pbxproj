@@ -15,9 +15,11 @@
 		D11EC1DE1DADD81300DE258B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11EC1DC1DADD81300DE258B /* LaunchScreen.storyboard */; };
 		D1337C661DAE31BD003CBD4E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1337C651DAE31BD003CBD4E /* UserViewModel.swift */; };
 		D1337C681DAF0DBC003CBD4E /* LoginWithRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1337C671DAF0DBC003CBD4E /* LoginWithRxVC.swift */; };
+		D14065451DB472EA0067BBF8 /* GankResponeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14065441DB472EA0067BBF8 /* GankResponeExt.swift */; };
 		D16AAA921DAE2763004981F4 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16AAA911DAE2763004981F4 /* MenuVC.swift */; };
 		D183CC661DB061170010049C /* RxSwiftStudyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D183CC651DB061170010049C /* RxSwiftStudyVC.swift */; };
 		D19517681DAE2C9200D18A5A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19517671DAE2C9200D18A5A /* User.swift */; };
+		D1A7824F1DB4588F00D80EFC /* GankService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A7824E1DB4588F00D80EFC /* GankService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +34,11 @@
 		D11EC1DF1DADD81300DE258B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1337C651DAE31BD003CBD4E /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		D1337C671DAF0DBC003CBD4E /* LoginWithRxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWithRxVC.swift; sourceTree = "<group>"; };
+		D14065441DB472EA0067BBF8 /* GankResponeExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankResponeExt.swift; sourceTree = "<group>"; };
 		D16AAA911DAE2763004981F4 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		D183CC651DB061170010049C /* RxSwiftStudyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyVC.swift; sourceTree = "<group>"; };
 		D19517671DAE2C9200D18A5A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D1A7824E1DB4588F00D80EFC /* GankService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankService.swift; sourceTree = "<group>"; };
 		E359220AA70C8AD20AA016E7 /* Pods-GGSwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGSwiftStudy/Pods-GGSwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +74,7 @@
 		D11EC1C71DADD81300DE258B = {
 			isa = PBXGroup;
 			children = (
+				D1A7824D1DB4584400D80EFC /* MoyaMod */,
 				D1337C641DAE31AC003CBD4E /* ViewModel */,
 				D19517661DAE2C8100D18A5A /* Model */,
 				D16AAA901DAE2737004981F4 /* ViewController */,
@@ -125,6 +130,15 @@
 				D19517671DAE2C9200D18A5A /* User.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		D1A7824D1DB4584400D80EFC /* MoyaMod */ = {
+			isa = PBXGroup;
+			children = (
+				D1A7824E1DB4588F00D80EFC /* GankService.swift */,
+				D14065441DB472EA0067BBF8 /* GankResponeExt.swift */,
+			);
+			name = MoyaMod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,10 +267,12 @@
 			files = (
 				D19517681DAE2C9200D18A5A /* User.swift in Sources */,
 				D16AAA921DAE2763004981F4 /* MenuVC.swift in Sources */,
+				D14065451DB472EA0067BBF8 /* GankResponeExt.swift in Sources */,
 				D1337C681DAF0DBC003CBD4E /* LoginWithRxVC.swift in Sources */,
 				D11EC1D61DADD81300DE258B /* ViewController.swift in Sources */,
 				D183CC661DB061170010049C /* RxSwiftStudyVC.swift in Sources */,
 				D1337C661DAE31BD003CBD4E /* UserViewModel.swift in Sources */,
+				D1A7824F1DB4588F00D80EFC /* GankService.swift in Sources */,
 				D11EC1D41DADD81300DE258B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +399,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A94PQW5A8P;
 				INFOPLIST_FILE = GGSwiftStudy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gao.GGSwiftStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -398,7 +414,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A94PQW5A8P;
 				INFOPLIST_FILE = GGSwiftStudy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gao.GGSwiftStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -12,6 +12,7 @@ target 'GGSwiftStudy' do
     pod 'RxSwift', '~> 3.0.0-beta.1'
     pod 'RxDataSources', '~> 1.0.0-beta.2'
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
-    
+    pod 'Moya', '8.0.0-beta.2'
+    pod 'Moya/RxSwift'
 end
 
