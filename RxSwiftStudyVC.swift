@@ -12,6 +12,8 @@ import Moya
 import SwiftyJSON
 import RxDataSources
 import Kingfisher
+import MJRefresh
+import SVProgressHUD
 
 class RxSwiftStudyVC : UITableViewController {
     
@@ -25,20 +27,47 @@ class RxSwiftStudyVC : UITableViewController {
         tableView.register(MeiziCell.self, forCellReuseIdentifier: "cell")
         tableView.tableFooterView = UIView(frame: CGRect.zero)
 
-        loadData()
+        tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: { 
+            self.loadData()
+        })
         
+        tableView.mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: { 
+            if self.demos.count % 10 == 0 {
+                self.loadData(self.demos.count / 10 + 1)
+            }
+            else {
+                self.tableView.mj_footer.endRefreshingWithNoMoreData()
+            }
+        })
+        
+        loadData()
     }
     
-    func loadData(){
+    func loadData(_ index:Int = 1){
         
+        
+        // 转入 参数 和 header 方法
+/*
+        let endpointClosure = { (target: GankService) -> Endpoint<GankService> in
+            let url = target.baseURL.appendingPathComponent(target.path).absoluteString
+            return Endpoint(URL: url,
+                            sampleResponseClosure: {.networkResponse(200, target.sampleData)},
+                            method: target.method,
+                            parameters: ["username":"name", "password":self."pwd"],
+                            httpHeaderFields:["Request-Source":"4","Response-Type":"text/json","version":"v_1_0"])
+        }
+        
+        let provider = RxMoyaProvider<GankService>(endpointClosure:endpointClosure)
+*/
+       
         let provider = RxMoyaProvider<GankService>()
-        provider.request(.Fuli(page: 1))
+        
+        provider.request(.Fuli(page: index))
             .map({ (resp) -> JSON in
                 let json = JSON(data: resp.data)
                 return json
             })
             .filter({ (json) -> Bool in
-                
                 let error = json["error"].bool ?? false
                 let count = json["count"].number ?? 0
                 
@@ -48,11 +77,18 @@ class RxSwiftStudyVC : UITableViewController {
                 else {
                     return false
                 }
-                
             })
+            .doOnCompleted {
+                self.tableView.mj_header.endRefreshing()
+                self.tableView.mj_footer.endRefreshing()
+            }
             .subscribeNext({ (json) in
                 if let results = json["results"].array {
-                    self.demos.removeAll()
+                    
+                    if index == 1 {
+                        self.demos.removeAll()
+                    }
+                    
                     results.forEach({ (line) in
                         self.demos.append(line)
                     })
