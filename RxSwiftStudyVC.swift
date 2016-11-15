@@ -70,7 +70,7 @@ class RxSwiftStudyVC : UITableViewController {
             .filter({ (json) -> Bool in
                 let error = json["error"].bool ?? false
                 let count = json["count"].number ?? 0
-                
+
                 if error == false && count.intValue > 0 {
                     return true
                 }
@@ -78,11 +78,7 @@ class RxSwiftStudyVC : UITableViewController {
                     return false
                 }
             })
-            .doOnCompleted {
-                self.tableView.mj_header.endRefreshing()
-                self.tableView.mj_footer.endRefreshing()
-            }
-            .subscribeNext({ (json) in
+            .subscribe(onNext: { (json) in
                 if let results = json["results"].array {
                     
                     if index == 1 {
@@ -94,7 +90,16 @@ class RxSwiftStudyVC : UITableViewController {
                     })
                     self.tableView.reloadData()
                 }
+
+                }, onError: { (error) in
+                    
+                }, onCompleted: { 
+                    self.tableView.mj_header.endRefreshing()
+                                   self.tableView.mj_footer.endRefreshing()
+                }, onDisposed: { 
+
             })
+
         
     }
     

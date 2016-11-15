@@ -13,6 +13,8 @@
 		D11EC1D91DADD81300DE258B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11EC1D71DADD81300DE258B /* Main.storyboard */; };
 		D11EC1DB1DADD81300DE258B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11EC1DA1DADD81300DE258B /* Assets.xcassets */; };
 		D11EC1DE1DADD81300DE258B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11EC1DC1DADD81300DE258B /* LaunchScreen.storyboard */; };
+		D125A7FE1DDA8E6D00CB9F30 /* RxDataSourceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125A7FD1DDA8E6D00CB9F30 /* RxDataSourceVC.swift */; };
+		D125A8001DDA8EF700CB9F30 /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125A7FF1DDA8EF700CB9F30 /* R.swift */; };
 		D1337C661DAE31BD003CBD4E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1337C651DAE31BD003CBD4E /* UserViewModel.swift */; };
 		D1337C681DAF0DBC003CBD4E /* LoginWithRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1337C671DAF0DBC003CBD4E /* LoginWithRxVC.swift */; };
 		D14065451DB472EA0067BBF8 /* GankResponeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14065441DB472EA0067BBF8 /* GankResponeExt.swift */; };
@@ -32,6 +34,8 @@
 		D11EC1DA1DADD81300DE258B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D11EC1DD1DADD81300DE258B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D11EC1DF1DADD81300DE258B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D125A7FD1DDA8E6D00CB9F30 /* RxDataSourceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxDataSourceVC.swift; sourceTree = "<group>"; };
+		D125A7FF1DDA8EF700CB9F30 /* R.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		D1337C651DAE31BD003CBD4E /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		D1337C671DAF0DBC003CBD4E /* LoginWithRxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWithRxVC.swift; sourceTree = "<group>"; };
 		D14065441DB472EA0067BBF8 /* GankResponeExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankResponeExt.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 				D11EC1DA1DADD81300DE258B /* Assets.xcassets */,
 				D11EC1DC1DADD81300DE258B /* LaunchScreen.storyboard */,
 				D11EC1DF1DADD81300DE258B /* Info.plist */,
+				D125A7FF1DDA8EF700CB9F30 /* R.swift */,
 			);
 			path = GGSwiftStudy;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 				D16AAA911DAE2763004981F4 /* MenuVC.swift */,
 				D1337C671DAF0DBC003CBD4E /* LoginWithRxVC.swift */,
 				D183CC651DB061170010049C /* RxSwiftStudyVC.swift */,
+				D125A7FD1DDA8E6D00CB9F30 /* RxDataSourceVC.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -271,9 +277,11 @@
 				D1337C681DAF0DBC003CBD4E /* LoginWithRxVC.swift in Sources */,
 				D11EC1D61DADD81300DE258B /* ViewController.swift in Sources */,
 				D183CC661DB061170010049C /* RxSwiftStudyVC.swift in Sources */,
+				D125A7FE1DDA8E6D00CB9F30 /* RxDataSourceVC.swift in Sources */,
 				D1337C661DAE31BD003CBD4E /* UserViewModel.swift in Sources */,
 				D1A7824F1DB4588F00D80EFC /* GankService.swift in Sources */,
 				D11EC1D41DADD81300DE258B /* AppDelegate.swift in Sources */,
+				D125A8001DDA8EF700CB9F30 /* R.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

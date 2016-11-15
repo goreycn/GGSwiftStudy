@@ -27,7 +27,7 @@ extension GankService: TargetType {
     var method: Moya.Method {
         switch self {
         case .Fuli(page: _):
-            return .GET
+            return .get
         }
     }
     var parameters: [String: Any]? {
