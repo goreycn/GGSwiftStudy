@@ -12,4 +12,11 @@ import UIKit
 struct R {
     static var kScreenW = UIScreen.main.bounds.width
     static var kScreenH = UIScreen.main.bounds.height
+
+
+    struct color {
+        static var red = UIColor.red
+        static var bg = UIColor.lightGray
+        static var white = UIColor.white
+    }
 }

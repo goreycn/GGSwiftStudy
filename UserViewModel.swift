@@ -19,7 +19,8 @@ class UserViewModel: NSObject {
             let users = [
                 User(screenName:"LoginWithRxSwift"),
                 User(screenName:"RxSwfitDemo"),
-                User(screenName:"RxDatasource")
+                User(screenName:"RxDatasource"),
+                User(screenName:"RxDemo")
             ]
             
             let section = [SectionModel(model: "", items: users)]

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6BB7D8FA0588F0C53E1BD1CB /* Pods_GGSwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AF54B62FA14B5882285E64 /* Pods_GGSwiftStudy.framework */; };
+		C81F870BD3560FBB9C6EE173 /* RxDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81F8C91FA35E7EEC9745136 /* RxDemoVC.swift */; };
+		C81F8A74B4E22C3225FB9D95 /* SnapKitExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81F8206E66FB13F506668F1 /* SnapKitExt.swift */; };
 		D11EC1D41DADD81300DE258B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EC1D31DADD81300DE258B /* AppDelegate.swift */; };
 		D11EC1D61DADD81300DE258B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EC1D51DADD81300DE258B /* ViewController.swift */; };
 		D11EC1D91DADD81300DE258B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11EC1D71DADD81300DE258B /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		6A79FFEEC0555615CA5A2424 /* Pods-GGSwiftStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSwiftStudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGSwiftStudy/Pods-GGSwiftStudy.release.xcconfig"; sourceTree = "<group>"; };
 		84AF54B62FA14B5882285E64 /* Pods_GGSwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGSwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C81F8206E66FB13F506668F1 /* SnapKitExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitExt.swift; sourceTree = "<group>"; };
+		C81F8C91FA35E7EEC9745136 /* RxDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxDemoVC.swift; sourceTree = "<group>"; };
 		D11EC1D01DADD81300DE258B /* GGSwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGSwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11EC1D31DADD81300DE258B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D11EC1D51DADD81300DE258B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +79,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C81F83FD5C666EA4BFD9877E /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				C81F8206E66FB13F506668F1 /* SnapKitExt.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		D11EC1C71DADD81300DE258B = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +98,7 @@
 				D11EC1D11DADD81300DE258B /* Products */,
 				11CECA01D2C1F4AB37CE8A4B /* Pods */,
 				273C41CFD39323C845D74158 /* Frameworks */,
+				C81F83FD5C666EA4BFD9877E /* extension */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +139,7 @@
 				D1337C671DAF0DBC003CBD4E /* LoginWithRxVC.swift */,
 				D183CC651DB061170010049C /* RxSwiftStudyVC.swift */,
 				D125A7FD1DDA8E6D00CB9F30 /* RxDataSourceVC.swift */,
+				C81F8C91FA35E7EEC9745136 /* RxDemoVC.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -282,6 +296,8 @@
 				D1A7824F1DB4588F00D80EFC /* GankService.swift in Sources */,
 				D11EC1D41DADD81300DE258B /* AppDelegate.swift in Sources */,
 				D125A8001DDA8EF700CB9F30 /* R.swift in Sources */,
+				C81F870BD3560FBB9C6EE173 /* RxDemoVC.swift in Sources */,
+				C81F8A74B4E22C3225FB9D95 /* SnapKitExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
