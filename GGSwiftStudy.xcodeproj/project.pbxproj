@@ -24,6 +24,7 @@
 		D183CC661DB061170010049C /* RxSwiftStudyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D183CC651DB061170010049C /* RxSwiftStudyVC.swift */; };
 		D19517681DAE2C9200D18A5A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19517671DAE2C9200D18A5A /* User.swift */; };
 		D1A7824F1DB4588F00D80EFC /* GankService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A7824E1DB4588F00D80EFC /* GankService.swift */; };
+		D1CFD5ED1DEA87000055B0C1 /* top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1CFD5EC1DEA87000055B0C1 /* top.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		D183CC651DB061170010049C /* RxSwiftStudyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyVC.swift; sourceTree = "<group>"; };
 		D19517671DAE2C9200D18A5A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D1A7824E1DB4588F00D80EFC /* GankService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankService.swift; sourceTree = "<group>"; };
+		D1CFD5EC1DEA87000055B0C1 /* top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = top.jpg; sourceTree = "<group>"; };
 		E359220AA70C8AD20AA016E7 /* Pods-GGSwiftStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGSwiftStudy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGSwiftStudy/Pods-GGSwiftStudy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 		D11EC1C71DADD81300DE258B = {
 			isa = PBXGroup;
 			children = (
+				D1CFD5EB1DEA87000055B0C1 /* res */,
 				D1A7824D1DB4584400D80EFC /* MoyaMod */,
 				D1337C641DAE31AC003CBD4E /* ViewModel */,
 				D19517661DAE2C8100D18A5A /* Model */,
@@ -161,6 +164,14 @@
 			name = MoyaMod;
 			sourceTree = "<group>";
 		};
+		D1CFD5EB1DEA87000055B0C1 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				D1CFD5EC1DEA87000055B0C1 /* top.jpg */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D11EC1DE1DADD81300DE258B /* LaunchScreen.storyboard in Resources */,
+				D1CFD5ED1DEA87000055B0C1 /* top.jpg in Resources */,
 				D11EC1DB1DADD81300DE258B /* Assets.xcassets in Resources */,
 				D11EC1D91DADD81300DE258B /* Main.storyboard in Resources */,
 			);

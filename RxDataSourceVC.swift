@@ -51,7 +51,6 @@ class RxDataSourceVC: UIViewController {
         view.backgroundColor = UIColor.white
         
         view.addSubview(tableview)
-        
         ds.configureCell = { d, table, indexPath, user in
             let cell = table.dequeueReusableCell(withIdentifier: self.cellId)
             cell?.textLabel?.text = user.name

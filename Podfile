@@ -15,5 +15,6 @@ target 'GGSwiftStudy' do
     pod 'Moya/RxSwift'
     pod 'MJRefresh', '~> 3.1.12'
     pod 'SVProgressHUD', '~> 2.0.3'
+    pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
 end
 

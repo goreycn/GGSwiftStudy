@@ -55,15 +55,25 @@ class MenuVC : UIViewController, UITableViewDelegate {
         
         switch indexPath.row {
         case 0:
-            navigationController?.pushViewController(LoginWithRxVC(), animated: true)
+            pushvc(LoginWithRxVC.self)
         case 1:
-            navigationController?.pushViewController(RxSwiftStudyVC(), animated: true)
+            pushvc(RxSwiftStudyVC.self)
         case 2:
-            navigationController?.pushViewController( RxDataSourceVC(), animated: true )
+            pushvc(RxDataSourceVC.self)
         case 3:
-            navigationController?.pushViewController( RxDemoVC(), animated: true )
+            pushvc(RxDemoVC.self)
         default:
             debugPrint("nothing")
         }
     }
+    
+    func pushvc(_ vc:AnyClass) {
+        
+        if vc is UIViewController.Type {
+            navigationController?.pushViewController((vc as! UIViewController.Type).init(), animated: true)
+        }
+        
+    }
+    
+
 }

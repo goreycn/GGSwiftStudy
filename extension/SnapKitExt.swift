@@ -70,7 +70,7 @@ public extension ConstraintMaker {
         return self
     }
     // 相对于另外一个视图的 高 边对齐, offset: 偏移量
-    public func h( _ other: ConstraintRelatableTarget, _ offset: ConstraintOffsetTarget = 0 ) -> ConstraintMaker {
+    public func h( _ other: ConstraintRelatableTarget, _ offset: ConstraintOffsetTarget = 0 ) {
         if other is Int {
             self.height.equalTo( other )
         } else if other is UInt {
@@ -84,7 +84,7 @@ public extension ConstraintMaker {
         } else {
             self.height.equalTo( other ).offset( offset )
         }
-        return self
+
     }
     // 相对于另外一个视图的 中心点x 边对齐, offset: 偏移量
     public func cx( _ other: ConstraintRelatableTarget, _ offset: ConstraintOffsetTarget = 0 ) -> ConstraintMaker {

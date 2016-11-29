@@ -76,7 +76,7 @@ class RxDemoVC: UIViewController {
         }
 
         btnDone.mc {
-            $0.pcx().pw( -50 ).h( 40 ).t( self.lbResult.b, 20 )
+            $0.pcx().pw( -50 ).t( self.lbResult.b, 20 ).h( 40 )
         }
 
         view.backgroundColor = R.color.bg

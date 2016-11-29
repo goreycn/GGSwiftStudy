@@ -18,5 +18,11 @@ struct R {
         static var red = UIColor.red
         static var bg = UIColor.lightGray
         static var white = UIColor.white
+        static var clear = UIColor.clear
+    }
+    
+    struct dimens {
+        static var winW = UIScreen.main.bounds.width
+        static var winH = UIScreen.main.bounds.height
     }
 }
