@@ -12,6 +12,7 @@ import SnapKit
 import RxCocoa
 import RxSwift
 import RxDataSources
+import Spring
 
 class MenuVC : UIViewController, UITableViewDelegate {
     
@@ -21,6 +22,8 @@ class MenuVC : UIViewController, UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        gg_transparentNavigationBar()
         
         view.backgroundColor = UIColor.white
         title = "Grubby˚∆˚"
@@ -62,18 +65,46 @@ class MenuVC : UIViewController, UITableViewDelegate {
             pushvc(RxDataSourceVC.self)
         case 3:
             pushvc(RxDemoVC.self)
+        case 4:
+            let vc = SpringOptionVC()
+            vc.modalPresentationStyle = .overCurrentContext
+            vc.delegate = self
+//            self.modalTransitionStyle = .coverVertical
+//            self.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false, completion: nil)
         default:
             debugPrint("nothing")
         }
     }
     
-    func pushvc(_ vc:AnyClass) {
-        
+    func pushvc(_ vc:AnyClass) {        
         if vc is UIViewController.Type {
             navigationController?.pushViewController((vc as! UIViewController.Type).init(), animated: true)
         }
-        
     }
     
+    func presentvc(_ vc: AnyClass) {
+        if vc is UIViewController.Type {
+            let c = (vc as! UIViewController.Type).init()
+            c.modalPresentationStyle = .overCurrentContext
+            self.present(c, animated: true, completion: nil)
+        }
+    }
+    
+    
+    func minimizeView(_ sender:AnyObject) {
+        UIApplication.shared.statusBarStyle = .lightContent
+        SpringAnimation.spring(duration: 0.7) { 
+            self.view.transform = CGAffineTransform(scaleX: 0.935, y: 0.935)
+        }
+    }
+    
+    func maximizeView(_ sender:AnyObject){
+        UIApplication.shared.statusBarStyle = .default
+        SpringAnimation.spring(duration: 0.7) { 
+            self.view.transform = CGAffineTransform(scaleX: 1, y: 1)
+        }
+    }
 
+    
 }

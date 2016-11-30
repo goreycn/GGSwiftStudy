@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 struct R {
     static var kScreenW = UIScreen.main.bounds.width
     static var kScreenH = UIScreen.main.bounds.height
@@ -19,6 +20,8 @@ struct R {
         static var bg = UIColor.lightGray
         static var white = UIColor.white
         static var clear = UIColor.clear
+        static var gray = UIColor.gray
+        static var lightGray = UIColor.lightGray
     }
     
     struct dimens {

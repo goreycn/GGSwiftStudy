@@ -27,7 +27,7 @@ class LoginWithRxVC : UIViewController  {
         
         btnLogin.addTarget(self, action: #selector(onClickLogin), for: .touchUpInside)
         
-        Observable.combineLatest(tfUsername.rx.text, tfPassword.rx.text) { ($0, $1) }
+        _ = Observable.combineLatest(tfUsername.rx.text, tfPassword.rx.text) { ($0, $1) }
             .map{ ($0?.characters.count)! > 6 && ($1?.characters.count)! > 6 }
             .bindTo(btnLogin.rx.isEnabled)
  

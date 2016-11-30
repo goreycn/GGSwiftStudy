@@ -62,7 +62,7 @@ class RxSwiftStudyVC : UITableViewController {
        
         let provider = RxMoyaProvider<GankService>()
         
-        provider.request(.Fuli(page: index))
+        _ = provider.request(.Fuli(page: index))
             .map({ (resp) -> JSON in
                 let json = JSON(data: resp.data)
                 return json

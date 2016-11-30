@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = UINavigationController(rootViewController: MenuVC())
         
-        myJust(element: 0).subscribe(onNext: { n in
+        _ = myJust(element: 0).subscribe(onNext: { n in
             debugPrint(n)
         })
         

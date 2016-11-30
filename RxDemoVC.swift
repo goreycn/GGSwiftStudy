@@ -82,7 +82,7 @@ class RxDemoVC: UIViewController {
         view.backgroundColor = R.color.bg
 
         // 绑定两个数据源, 实时输出到 另外一个输出
-        Observable.combineLatest( tfName.rx.text, tfPwd.rx.text ) {
+        _ = Observable.combineLatest( tfName.rx.text, tfPwd.rx.text ) {
             a, b in "\( a! ) \( b! )"
         }.bindTo( self.lbResult.rx.text )
 

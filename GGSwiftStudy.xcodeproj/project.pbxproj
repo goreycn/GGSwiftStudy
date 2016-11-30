@@ -10,6 +10,9 @@
 		6BB7D8FA0588F0C53E1BD1CB /* Pods_GGSwiftStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AF54B62FA14B5882285E64 /* Pods_GGSwiftStudy.framework */; };
 		C81F870BD3560FBB9C6EE173 /* RxDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81F8C91FA35E7EEC9745136 /* RxDemoVC.swift */; };
 		C81F8A74B4E22C3225FB9D95 /* SnapKitExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81F8206E66FB13F506668F1 /* SnapKitExt.swift */; };
+		D11981B41DED56B800C38082 /* SpringOptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11981B31DED56B800C38082 /* SpringOptionVC.swift */; };
+		D11981B61DED764D00C38082 /* clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D11981B51DED764D00C38082 /* clear@2x.png */; };
+		D11981B81DED76ED00C38082 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11981B71DED76ED00C38082 /* UIViewControllerExt.swift */; };
 		D11EC1D41DADD81300DE258B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EC1D31DADD81300DE258B /* AppDelegate.swift */; };
 		D11EC1D61DADD81300DE258B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11EC1D51DADD81300DE258B /* ViewController.swift */; };
 		D11EC1D91DADD81300DE258B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11EC1D71DADD81300DE258B /* Main.storyboard */; };
@@ -32,6 +35,9 @@
 		84AF54B62FA14B5882285E64 /* Pods_GGSwiftStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGSwiftStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81F8206E66FB13F506668F1 /* SnapKitExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitExt.swift; sourceTree = "<group>"; };
 		C81F8C91FA35E7EEC9745136 /* RxDemoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxDemoVC.swift; sourceTree = "<group>"; };
+		D11981B31DED56B800C38082 /* SpringOptionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringOptionVC.swift; sourceTree = "<group>"; };
+		D11981B51DED764D00C38082 /* clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clear@2x.png"; sourceTree = "<group>"; };
+		D11981B71DED76ED00C38082 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		D11EC1D01DADD81300DE258B /* GGSwiftStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGSwiftStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11EC1D31DADD81300DE258B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D11EC1D51DADD81300DE258B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				C81F8206E66FB13F506668F1 /* SnapKitExt.swift */,
+				D11981B71DED76ED00C38082 /* UIViewControllerExt.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 				D183CC651DB061170010049C /* RxSwiftStudyVC.swift */,
 				D125A7FD1DDA8E6D00CB9F30 /* RxDataSourceVC.swift */,
 				C81F8C91FA35E7EEC9745136 /* RxDemoVC.swift */,
+				D11981B31DED56B800C38082 /* SpringOptionVC.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 		D1CFD5EB1DEA87000055B0C1 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				D11981B51DED764D00C38082 /* clear@2x.png */,
 				D1CFD5EC1DEA87000055B0C1 /* top.jpg */,
 			);
 			path = res;
@@ -236,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D11EC1DE1DADD81300DE258B /* LaunchScreen.storyboard in Resources */,
+				D11981B61DED764D00C38082 /* clear@2x.png in Resources */,
 				D1CFD5ED1DEA87000055B0C1 /* top.jpg in Resources */,
 				D11EC1DB1DADD81300DE258B /* Assets.xcassets in Resources */,
 				D11EC1D91DADD81300DE258B /* Main.storyboard in Resources */,
@@ -298,9 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19517681DAE2C9200D18A5A /* User.swift in Sources */,
+				D11981B41DED56B800C38082 /* SpringOptionVC.swift in Sources */,
 				D16AAA921DAE2763004981F4 /* MenuVC.swift in Sources */,
 				D14065451DB472EA0067BBF8 /* GankResponeExt.swift in Sources */,
 				D1337C681DAF0DBC003CBD4E /* LoginWithRxVC.swift in Sources */,
+				D11981B81DED76ED00C38082 /* UIViewControllerExt.swift in Sources */,
 				D11EC1D61DADD81300DE258B /* ViewController.swift in Sources */,
 				D183CC661DB061170010049C /* RxSwiftStudyVC.swift in Sources */,
 				D125A7FE1DDA8E6D00CB9F30 /* RxDataSourceVC.swift in Sources */,
@@ -433,7 +445,10 @@
 			baseConfigurationReference = E359220AA70C8AD20AA016E7 /* Pods-GGSwiftStudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
 				DEVELOPMENT_TEAM = A94PQW5A8P;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = GGSwiftStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -448,7 +463,10 @@
 			baseConfigurationReference = 6A79FFEEC0555615CA5A2424 /* Pods-GGSwiftStudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
 				DEVELOPMENT_TEAM = A94PQW5A8P;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = GGSwiftStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
