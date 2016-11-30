@@ -22,9 +22,21 @@ class SpringOptionVC: UIViewController {
         return a
     }()
     
+    var btnDemo: SpringButton {
+        let a = SpringButton()
+        a.frame = CGRect(x: 10, y: 10, width: 100, height: 30)
+        a.addTarget(self, action: #selector(onClickDemo), for: .touchUpInside)
+        a.backgroundColor = R.color.red
+        return a
+    }
+    
+    
     lazy var vBottom : SpringView = {
         let a = SpringView()
-        a.backgroundColor = R.color.red
+        
+        a.addSubview(self.btnDemo)
+        
+        a.backgroundColor = R.color.darkGray
         a.animation = "squeezeUp"
         a.animateFrom = true
         return a
@@ -32,6 +44,8 @@ class SpringOptionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         view.backgroundColor = R.color.clear
         
@@ -41,6 +55,8 @@ class SpringOptionVC: UIViewController {
             m.height.equalTo(400)
             m.bottom.equalTo(self.view).offset(80)
         }
+        
+
         
         view.addSubview(btnClose)
         btnClose.snp.makeConstraints { m in
@@ -52,9 +68,14 @@ class SpringOptionVC: UIViewController {
         vBottom.transform = CGAffineTransform(translationX: 0, y: -R.dimens.winH)
     }
     
+    func onClickDemo(){
+        self.btnDemo.animation = "shake"
+        self.btnDemo.animate()
+    }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         vBottom.animate()
     }
     

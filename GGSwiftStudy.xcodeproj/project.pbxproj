@@ -24,6 +24,7 @@
 		D1337C681DAF0DBC003CBD4E /* LoginWithRxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1337C671DAF0DBC003CBD4E /* LoginWithRxVC.swift */; };
 		D14065451DB472EA0067BBF8 /* GankResponeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14065441DB472EA0067BBF8 /* GankResponeExt.swift */; };
 		D16AAA921DAE2763004981F4 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16AAA911DAE2763004981F4 /* MenuVC.swift */; };
+		D1704E361DEEC2730096CC5D /* SpringUtilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1704E351DEEC2730096CC5D /* SpringUtilVC.swift */; };
 		D183CC661DB061170010049C /* RxSwiftStudyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D183CC651DB061170010049C /* RxSwiftStudyVC.swift */; };
 		D19517681DAE2C9200D18A5A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19517671DAE2C9200D18A5A /* User.swift */; };
 		D1A7824F1DB4588F00D80EFC /* GankService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A7824E1DB4588F00D80EFC /* GankService.swift */; };
@@ -51,6 +52,7 @@
 		D1337C671DAF0DBC003CBD4E /* LoginWithRxVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWithRxVC.swift; sourceTree = "<group>"; };
 		D14065441DB472EA0067BBF8 /* GankResponeExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankResponeExt.swift; sourceTree = "<group>"; };
 		D16AAA911DAE2763004981F4 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		D1704E351DEEC2730096CC5D /* SpringUtilVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringUtilVC.swift; sourceTree = "<group>"; };
 		D183CC651DB061170010049C /* RxSwiftStudyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftStudyVC.swift; sourceTree = "<group>"; };
 		D19517671DAE2C9200D18A5A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D1A7824E1DB4588F00D80EFC /* GankService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankService.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				D125A7FD1DDA8E6D00CB9F30 /* RxDataSourceVC.swift */,
 				C81F8C91FA35E7EEC9745136 /* RxDemoVC.swift */,
 				D11981B31DED56B800C38082 /* SpringOptionVC.swift */,
+				D1704E351DEEC2730096CC5D /* SpringUtilVC.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				D1337C681DAF0DBC003CBD4E /* LoginWithRxVC.swift in Sources */,
 				D11981B81DED76ED00C38082 /* UIViewControllerExt.swift in Sources */,
 				D11EC1D61DADD81300DE258B /* ViewController.swift in Sources */,
+				D1704E361DEEC2730096CC5D /* SpringUtilVC.swift in Sources */,
 				D183CC661DB061170010049C /* RxSwiftStudyVC.swift in Sources */,
 				D125A7FE1DDA8E6D00CB9F30 /* RxDataSourceVC.swift in Sources */,
 				D1337C661DAE31BD003CBD4E /* UserViewModel.swift in Sources */,
@@ -448,6 +452,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_INFINITE_RECURSION = NO;
 				DEVELOPMENT_TEAM = A94PQW5A8P;
+				ENABLE_BITCODE = YES;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = GGSwiftStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -466,6 +471,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_INFINITE_RECURSION = NO;
 				DEVELOPMENT_TEAM = A94PQW5A8P;
+				ENABLE_BITCODE = YES;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				INFOPLIST_FILE = GGSwiftStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

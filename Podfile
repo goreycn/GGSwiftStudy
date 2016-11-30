@@ -17,5 +17,6 @@ target 'GGSwiftStudy' do
     pod 'MJRefresh', '~> 3.1.12'
     pod 'SVProgressHUD', '~> 2.0.3'
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
+#    pod 'TransitionTreasury', '~> 3.1.0'
 end
 

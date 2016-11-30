@@ -62,20 +62,20 @@ class RxDemoVC: UIViewController {
 //            m.h(40)
 //        }
 
-        tfName.mc {
+        tfName.sm {
             $0.pl(20).pr(-20).pt(100).h(40)
         }
 
-        tfPwd.mc {
+        tfPwd.sm {
             m in
             m.l(self.tfName).r(self.tfName).t(self.tfName.b, 10).h(40)
         }
 
-        lbResult.mc {
+        lbResult.sm {
             $0.l(self.tfPwd).r(self.tfPwd).t(self.tfPwd.b, 10).h(40)
         }
 
-        btnDone.mc {
+        btnDone.sm {
             $0.pcx().pw( -50 ).t( self.lbResult.b, 20 ).h( 40 )
         }
 

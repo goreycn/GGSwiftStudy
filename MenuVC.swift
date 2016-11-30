@@ -72,6 +72,8 @@ class MenuVC : UIViewController, UITableViewDelegate {
 //            self.modalTransitionStyle = .coverVertical
 //            self.modalPresentationStyle = .fullScreen
             self.present(vc, animated: false, completion: nil)
+        case 5:
+            pushvc(SpringUtilVC.self)
         default:
             debugPrint("nothing")
         }
